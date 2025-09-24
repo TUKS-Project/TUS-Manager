@@ -1,15 +1,17 @@
 /**
- * TUKS - The Ultimate Kill Shell Manager (Fixed Version)
+ * TUKS - The Ultimate Shell Manager 
  *
  * This tool manages bind and reverse shell sessions using netcat (nc).
  * Features:
  *   - Listen for reverse shells
  *   - Connect to bind shells
- *   - Manage multiple sessions (list, kill, use, background)
+ *   - Manage multiple sessions (list, kill, use, background, etc)
  *   - Upload files via base64 chunks
  *
- * Compile: gcc -o tuks tuks.c
- * Author: All
+ * Compile: gcc -o tusm main.c
+ * Usage: ./tusm
+ *
+ * Author: Abdullah, Abdulaziz
  */
 
  #include <stdio.h>
@@ -22,9 +24,9 @@
  #include <time.h>
  #include <errno.h>
  
- #define VERSION "0.3 Beta"
- #define AUTHOR "Moak"
- #define YEAR "2025"
+ #define VERSION "1.0"
+ #define AUTHOR "Abdullah, Abdulaziz"
+ #define URL "https://github.com/TUKS-Project/TUS-Manager"
  
  #define MAX_SESSIONS 20
  #define BUFFER_SIZE 4096
@@ -86,6 +88,26 @@
      return out;
  }
  
+ // HELP
+ void print_help(){
+    printf("\033[1;33m");
+    printf("\n CLI commands:\n");
+    printf("  listen <port>          - Start a reverse shell listener\n");
+    printf("  connect <ip> <port>    - Connect to a bind shell\n");
+    printf("  list                   - List all sessions\n");
+    printf("  use <id>               - Interact with a session\n");
+    printf("  kill <id>              - Terminate a session\n");
+    printf("  upload <id> <local> <remote> - Upload file\n");
+    printf("  upgrade <id>           - Upgrade interactive shell (auto pty)\n");
+    printf("  help                   - Command menu\n");
+    printf("  clear                  - Clear screen\n");
+    printf("  exit                   - Exit TUKS\n");
+
+    printf("\n Session commands:\n");
+    printf("  /BG                   - Return to menu, And send session to Background\n");
+    printf("\033[0m\n\n");
+}
+
  /* ================== BANNER ================== */
  void print_banner() {
      time_t now = time(NULL);
@@ -105,7 +127,7 @@
      printf("═══════════════════════════════════\n");
  
      printf("\033[1;37m");
-     printf("  The Ultimate Kill Shell Manager\n");
+     printf("  The Ultimate Shell Manager\n");
  
      printf("\033[1;34m");
      printf("═══════════════════════════════════\n");
@@ -113,21 +135,9 @@
      printf("\033[0;36m");
      printf("Version: %s\n", VERSION);
      printf("Author : %s\n", AUTHOR);
-     printf("Created In: %s\n", YEAR);
+     printf("GitHub: %s\n", URL);
  
-     printf("\033[1;33m");
-     printf("\nCommands:\n");
-     printf("  listen <port>          - Start a reverse shell listener\n");
-     printf("  connect <ip> <port>    - Connect to a bind shell\n");
-     printf("  list                   - List all sessions\n");
-     printf("  use <id>               - Interact with a session\n");
-     printf("  kill <id>              - Terminate a session\n");
-     printf("  upload <id> <local> <remote> - Upload file\n");
-     printf("  upgrade <id>           - Upgrade interactive shell (auto pty)\n");
-     printf("  shell <id>             - Get interactive shell (auto pty)\n");
-     printf("  help                   - Command menu\n");
-     printf("  clear                  - Clear screen\n");
-     printf("  exit                   - Exit TUKS\n");
+     print_help();
  
      printf("\033[1;34m");
      printf("═══════════════════════════════════\n");
@@ -135,22 +145,7 @@
      fflush(stdout);
  }
  
- // HELP
- void print_help(){
-     printf("\033[1;33m");
-     printf("\nCommands:\n");
-     printf("  listen <port>          - Start a reverse shell listener\n");
-     printf("  connect <ip> <port>    - Connect to a bind shell\n");
-     printf("  list                   - List all sessions\n");
-     printf("  use <id>               - Interact with a session\n");
-     printf("  kill <id>              - Terminate a session\n");
-     printf("  upload <id> <local> <remote> - Upload file\n");
-     printf("  upgrade <id>           - Upgrade interactive shell (auto pty)\n");
-     printf("  help                   - Command menu\n");
-     printf("  clear                  - Clear screen\n");
-     printf("  exit                   - Exit TUKS\n");
-     printf("\033[0m");
- }
+ 
  
  /* ================== SESSION MANAGEMENT ================== */
  void add_session(pid_t pid, const char *desc, int in_pipe[], int out_pipe[]) {
@@ -407,7 +402,7 @@
          return;
      }
  
-     printf("[*] Interacting with session %d (type 'tuksB' to background)\n", id);
+     printf("[*] Interacting with session %d (type '/BG' to background)\n", id);
      sessions[session_idx].active = 1;
 
      char input[BUFFER_SIZE];
@@ -460,11 +455,14 @@
              // Remove newline
              input[strcspn(input, "\n")] = 0;
  
-             if (strcmp(input, "tuksB") == 0) {
+             if (strcmp(input, "/BG") == 0) {
                  printf("[*] Session %d sent to background\n", id);
                  sessions[session_idx].active = 0;
                  return;
              }
+             else if (strcmp(input, "clear") == 0) {
+                system("clear");
+            }
  
              // Send command
              strcat(input, "\n");
