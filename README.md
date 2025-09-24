@@ -6,8 +6,6 @@
 
 TUS-Manager (TUSM) is a C-based shell management utility that helps penetration testers and red-teamers manage bind and reverse shell sessions created with **netcat (nc)**. It supports multiple concurrent sessions, interactive switching, file transfers, and shell upgrades.
 
-⚠️ **Important:** This tool is intended for authorized security testing or lab environments only. Do not use it against systems you do not own or without explicit permission.
-
 
 ## Features
 
