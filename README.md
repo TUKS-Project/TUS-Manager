@@ -1,6 +1,6 @@
 # TUS-Manager — The Ultimate Shell Manager
 
-> A compact and practical shell session manager for penetration testers (and lab use only).
+> A compact and practical shell session manager for penetration testers.
 
 ## Overview
 
