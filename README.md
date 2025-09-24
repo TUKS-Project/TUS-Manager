@@ -4,7 +4,8 @@ The Ultimate Shell Manager
 
 ## Overview
 
-TUSM is a simple shell manager tool for educational and ethical penetration testing purposes. It manages **bind shells** and **reverse shells** using netcat (nc) under the hood. With TUSM, you can: 
+TUSM is a simple shell manager tool for pentestors!
+It manages **bind shells** and **reverse shells** using netcat (nc) under the hood. With readline wrapper (rlwrap), you can: 
 
 * Listen for reverse shells
 * Connect to bind shells
