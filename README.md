@@ -48,7 +48,7 @@ make
 ```bash
 Tusm
 ```
-
+![Logo](images/logo.png)
 
 Inside the TUKS shell:
 
