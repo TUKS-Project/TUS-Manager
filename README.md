@@ -49,14 +49,9 @@ make
 ```bash
 Tusm
 ```
+# User Interface & Commands
 ![Logo](images/UX.png)
 
-Inside the TUKS shell:
-
-use 1         # Switch to session 1
-background    # Put current session in background
-kill 2        # Kill session 2
-list          # Show all sessions
 
 
 
