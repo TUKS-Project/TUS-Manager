@@ -1,0 +1,7 @@
+<map id="base64_encode" name="base64_encode">
+<area shape="rect" id="Node000001" title="Encode a buffer into base64." alt="" coords="249,5,372,31"/>
+<area shape="rect" id="Node000002" href="$documented_8c.html#abf50d19801c0a1a670c979ed7414476f" title="Upload a local file to a remote session by sending base64 chunks." alt="" coords="108,5,201,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="236,21,202,21,202,15,236,15"/>
+<area shape="rect" id="Node000003" href="$documented_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="Program entry point and interactive command loop." alt="" coords="5,5,60,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="94,21,60,21,60,15,94,15"/>
+</map>
