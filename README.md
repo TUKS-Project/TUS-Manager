@@ -49,7 +49,7 @@ make
 ```bash
 Tusm
 ```
-![Logo](images/UI.png)
+![Logo](images/UX.png)
 
 Inside the TUKS shell:
 
