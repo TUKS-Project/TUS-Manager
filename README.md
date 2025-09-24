@@ -49,11 +49,11 @@ sudo apt update && sudo apt install -y netcat-openbsd rlwrap
 
 ## Usage
 
-# Start the tool
+1. Start the tool
 ```bash
 Tusm
 ```
-# User Interface & Commands
+2. User Interface & Commands
 ![Logo](images/UX.png)
 
 
