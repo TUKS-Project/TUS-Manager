@@ -30,14 +30,14 @@ TUSM is a simple shell manager tool for educational and ethical penetration test
 
 # Clone the repository
 ```bash
-git clone https://github.com/yourusername/tuks.git
-cd tuks
+git clone https://github.com/TUKS-Project/TUS-Manager.git
+cd TUS-Manager
 ```
 
 
 # Compile
 ```bash
-gcc tuks.c -o TUKS
+make
 ```
 
 --- 
@@ -46,7 +46,7 @@ gcc tuks.c -o TUKS
 
 # Start the tool
 ```bash
-/TUKS
+Tusm
 ```
 
 
