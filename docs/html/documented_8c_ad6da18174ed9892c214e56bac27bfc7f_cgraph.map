@@ -1,0 +1,5 @@
+<map id="print_banner" name="print_banner">
+<area shape="rect" id="Node000001" title="Print the ASCII art banner and program metadata." alt="" coords="5,5,109,31"/>
+<area shape="rect" id="Node000002" href="$documented_8c.html#a853216ac51aa181669ff4d3de74058a7" title="Print the interactive help / command menu to stdout." alt="" coords="157,5,244,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="109,15,144,15,144,21,109,21"/>
+</map>

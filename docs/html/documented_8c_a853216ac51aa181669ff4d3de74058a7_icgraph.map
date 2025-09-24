@@ -1,0 +1,8 @@
+<map id="print_help" name="print_help">
+<area shape="rect" id="Node000001" title="Print the interactive help / command menu to stdout." alt="" coords="260,5,347,31"/>
+<area shape="rect" id="Node000002" href="$documented_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="Program entry point and interactive command loop." alt="" coords="5,5,60,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="246,21,60,21,60,15,246,15"/>
+<area shape="rect" id="Node000003" href="$documented_8c.html#ad6da18174ed9892c214e56bac27bfc7f" title="Print the ASCII art banner and program metadata." alt="" coords="108,31,212,56"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="247,31,213,37,212,32,246,25"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="94,33,60,26,61,21,95,28"/>
+</map>

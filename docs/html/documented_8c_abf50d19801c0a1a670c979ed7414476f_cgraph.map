@@ -1,0 +1,5 @@
+<map id="upload_file" name="upload_file">
+<area shape="rect" id="Node000001" title="Upload a local file to a remote session by sending base64 chunks." alt="" coords="5,5,99,31"/>
+<area shape="rect" id="Node000002" href="$documented_8c.html#ac653f5b6dfa7a11107cdcc4e6b8c721c" title="Encode a buffer into base64." alt="" coords="147,5,269,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="99,15,133,15,133,21,99,21"/>
+</map>

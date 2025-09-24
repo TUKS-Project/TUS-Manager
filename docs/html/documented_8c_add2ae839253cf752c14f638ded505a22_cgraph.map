@@ -1,0 +1,5 @@
+<map id="connect_target" name="connect_target">
+<area shape="rect" id="Node000001" title="Connect to a remote bind shell using netcat and register a session." alt="" coords="5,5,124,31"/>
+<area shape="rect" id="Node000002" href="$documented_8c.html#aba6e2f92cbc0c6c6269dfd20063439d4" title="Add a new session to the global session list." alt="" coords="172,5,275,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="124,15,158,15,158,21,124,21"/>
+</map>
