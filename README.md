@@ -47,17 +47,37 @@ make
 sudo apt update && sudo apt install -y netcat-openbsd rlwrap
 ```
 
+## Commands reference
+
+- `listen <port>` — Start a reverse shell listener.
+- `connect <ip> <port>` — Connect to a bind shell.
+- `list` — Show all sessions.
+- `use <id>` — Interact with a session.
+- `kill <id>` — Terminate a session.
+- `upload <id> <local> <remote>` — Upload a file to remote target.
+- `download <id> <remote> <local>` — Download a remote file.
+- `upgrade <id>` — Upgrade shell to interactive PTY.
+- `help` — Show command menu.
+- `clear` — Clear screen.
+- `/BG` — Send active session to background.
+- `exit` — Quit TUSM.
+
+
 ## Usage
 
 1. Start the tool
 ```bash
 Tusm
 ```
-2. User Interface & Commands
+2. User Interface
 ![Logo](images/UX.png)
 
 
 
+## License
 
-## License This project is licensed under the [MIT License](LICENSE). 
+```
+MIT License
+Copyright (c) 2025 Abdullah, Abdulaziz
+```
 
