@@ -26,24 +26,26 @@ TUS-Manager (TUSM) is a C-based shell management utility that helps penetration 
 - POSIX shell environment (Linux/Unix)
 
 
----
-
 ## Installation
 
+1. Clone the repository:
 
-# Clone the repository
 ```bash
 git clone https://github.com/TUKS-Project/TUS-Manager.git
 cd TUS-Manager
 ```
 
+2. Compile the program:
 
-# Compile
 ```bash
 make
 ```
 
---- 
+3. (Optional) Install dependencies:
+
+```bash
+sudo apt update && sudo apt install -y netcat-openbsd rlwrap
+```
 
 ## Usage
 
