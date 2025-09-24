@@ -11,7 +11,7 @@
  * Compile: gcc -o tuks tuks.c
  * Usage: ./tuks
  *
- * Author: Moak (Fixed by Claude)
+ * Author: All
  */
 
  #include <stdio.h>
