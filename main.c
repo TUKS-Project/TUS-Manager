@@ -9,8 +9,6 @@
  *   - Upload files via base64 chunks
  *
  * Compile: gcc -o tuks tuks.c
- * Usage: ./tuks
- *
  * Author: All
  */
 
