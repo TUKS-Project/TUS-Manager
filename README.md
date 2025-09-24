@@ -13,7 +13,7 @@ TUS-Manager (TUSM) is a C-based shell management utility that helps penetration 
 - Connect to remote bind shells (`nc host port`)
 - Manage multiple concurrent sessions
 - Interactive session handling (background, switch, terminate)
-- Upload and download files via Base64
+- Upload files via Base64
 - Upgrade remote shells to interactive PTYs (python, script, bash)
 - Simple CLI with helpful command menu
 
@@ -55,7 +55,6 @@ sudo apt update && sudo apt install -y netcat-openbsd rlwrap
 - `use <id>` — Interact with a session.
 - `kill <id>` — Terminate a session.
 - `upload <id> <local> <remote>` — Upload a file to remote target.
-- `download <id> <remote> <local>` — Download a remote file.
 - `upgrade <id>` — Upgrade shell to interactive PTY.
 - `help` — Show command menu.
 - `clear` — Clear screen.
