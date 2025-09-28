@@ -43,6 +43,9 @@ sudo apt install rlwrap
 ### 3. Clone the repository
 Make sure Git is installed before cloning.
 ```bash
+sudo apt install -y git
+```
+```bash
 git clone https://github.com/TUKS-Project/TUS-Manager.git
 cd TUS-Manager
 ```
