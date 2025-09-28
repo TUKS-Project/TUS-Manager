@@ -28,24 +28,35 @@ TUS-Manager (TUSM) is a C-based shell management utility that helps penetration 
 
 ## Installation
 
-1. Clone the repository:
+1. Update packages and install Netcat
+Netcat is required for connectivity.
+
+```bash
+sudo apt update && sudo apt install -y netcat-openbsd
+```
+
+2. Install rlwrap
+rlwrap provides readline-style editing and command history.
+
+```bash
+sudo apt install rlwrap
+```
+
+3. Clone the repository
+Make sure Git is installed before cloning.
 
 ```bash
 git clone https://github.com/TUKS-Project/TUS-Manager.git
 cd TUS-Manager
 ```
 
-2. Compile the program:
-
+4. Compile the program:
+5. 
 ```bash
 make
 ```
 
-3. (Optional) Install dependencies:
 
-```bash
-sudo apt update && sudo apt install -y netcat-openbsd rlwrap
-```
 
 ## Commands reference
 
