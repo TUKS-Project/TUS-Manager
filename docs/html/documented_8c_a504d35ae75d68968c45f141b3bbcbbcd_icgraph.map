@@ -1,7 +1,0 @@
-<map id="drain_output" name="drain_output">
-<area shape="rect" id="Node000001" title="Read and print available output from a session&#39;s output pipe." alt="" coords="284,5,388,31"/>
-<area shape="rect" id="Node000002" href="$documented_8c.html#ae68d61c35976cb4b4e3b2a51f2ae2412" title="Interact with a session in a pseudo&#45;terminal loop." alt="" coords="108,5,236,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="270,21,237,21,237,15,270,15"/>
-<area shape="rect" id="Node000003" href="$documented_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="Program entry point and interactive command loop." alt="" coords="5,5,60,31"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="94,21,60,21,60,15,94,15"/>
-</map>

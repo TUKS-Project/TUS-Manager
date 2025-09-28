@@ -1,5 +1,0 @@
-<map id="start_listener" name="start_listener">
-<area shape="rect" id="Node000001" title="Start a netcat listener on the specified port and register a session." alt="" coords="5,5,113,31"/>
-<area shape="rect" id="Node000002" href="$documented_8c.html#aba6e2f92cbc0c6c6269dfd20063439d4" title="Add a new session to the global session list." alt="" coords="161,5,264,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="113,15,147,15,147,21,113,21"/>
-</map>

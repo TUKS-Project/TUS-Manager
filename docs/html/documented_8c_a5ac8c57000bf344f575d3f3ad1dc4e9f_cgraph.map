@@ -1,5 +1,0 @@
-<map id="check_sessions" name="check_sessions">
-<area shape="rect" id="Node000001" title="Poll all sessions to detect terminated child processes." alt="" coords="5,5,128,31"/>
-<area shape="rect" id="Node000002" href="$documented_8c.html#a90c498b005e5a791ee3571c7526d6ef8" title="Remove and cleanup a session by array index (0&#45;based)." alt="" coords="176,5,367,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="128,15,162,15,162,21,128,21"/>
-</map>

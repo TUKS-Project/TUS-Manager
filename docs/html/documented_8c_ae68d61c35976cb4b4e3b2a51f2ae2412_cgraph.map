@@ -1,7 +1,0 @@
-<map id="interact_session" name="interact_session">
-<area shape="rect" id="Node000001" title="Interact with a session in a pseudo&#45;terminal loop." alt="" coords="5,31,133,56"/>
-<area shape="rect" id="Node000002" href="$documented_8c.html#a504d35ae75d68968c45f141b3bbcbbcd" title="Read and print available output from a session&#39;s output pipe." alt="" coords="225,5,329,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="133,33,211,23,211,29,134,38"/>
-<area shape="rect" id="Node000003" href="$documented_8c.html#a90c498b005e5a791ee3571c7526d6ef8" title="Remove and cleanup a session by array index (0&#45;based)." alt="" coords="181,55,372,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="134,48,168,52,167,57,133,53"/>
-</map>
